@@ -4,81 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/style.css">
     <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: black;
-        overflow: hidden;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .parent {
-        position: relative;
-        width: 50%;
-        height: 50%;
-      }
-      span {
-        display: block;
-        color: white;
-        font-size: 100px;
-        text-shadow: -19px -17px 15px rgb(219, 219, 219);
-        transition: 2s linear;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -200%);
-      }
-      .box {
-        width: 0;
-        height: 0;
-        border-top: 348px solid rgb(189, 189, 189);
-        border-bottom: 0px solid rgba(126, 13, 13, 0);
-        border-right: 45px solid rgba(39, 7, 7, 0);
-        border-left: 45px solid rgba(212, 124, 124, 0);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform-style: preserve-3d;
-        transform-origin: 50% 90%;
-        transform: translate(-50%, -20%) rotateZ(-32deg);
-        transition: 2s linear;
-      }
-      .circle {
-        width: 90px;
-        height: 90px;
-        position: absolute;
-        background-color: yellow;
-        border-radius: 50%;
-        bottom: 309px;
-        right: -23px;
-        transform: rotateX(59deg) translateZ(14px) translateX(22px)
-          translateY(34px);
-      }
-      .rectangle {
-        position: absolute;
-        top: -352px;
-        left: -6px;
-        width: 114px;
-        height: 300px;
-        background-color: transparent;
-        box-shadow: -506px 41px 0 390px black, 506px 41px 0 390px black;
-      }
-
-      body:hover .box {
-        transform: translate(-50%, -20%) rotateZ(30deg);
-      }
-      body:hover span {
-        text-shadow: 19px -17px 15px rgb(219, 219, 219);
-      }
-    </style>
   </head>
   <body>
     <div class="parent">
